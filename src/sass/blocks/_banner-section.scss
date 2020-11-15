@@ -1,0 +1,147 @@
+.banner-section {
+    padding-top: 78px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__slider {
+        max-width: 870px;
+        &-img {
+            object-fit: cover;
+            min-height: 400px;
+        }
+        
+        &-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: transparent;
+            z-index: 5;
+            outline: none;
+            border: none;
+            padding: 0;
+            margin: 0;
+            cursor: pointer;
+        }
+        &-btnprev {
+            left: 20px;
+        }
+        &-btnnext {
+            right: 20px;
+        }
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: 40px;
+        text-align: center;
+        left: 0;
+        right: 0;
+    }
+    .slick-dots li {
+        display: inline-block;
+        padding: 0 5px;
+    }
+    .slick-dots button {
+        padding: 0;
+        font-size: 0;
+        margin: 0;
+        width: 11px;
+        height: 11px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        background-color: transparent;
+        outline: none;
+    }
+    .slick-active button {
+        background-color: #fff;
+    }
+    .sale-item {
+        max-width: 265px;
+        text-align: center;
+        border: 1px solid #CDCDCD;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__price {
+            font-family: 'Barlow', sans-serif;
+            text-align: right;
+            position: relative;
+            &-new {
+                font-weight: 700;
+                font-size: 27px;
+                line-height: 32px;
+                color: #1C62CD;
+                margin-right: 6px;
+                padding-right: 20px;
+            }
+            &-new::after {
+                content:'';
+                position: absolute;
+                width: 15px;
+                height: 18px;
+                background-image: url('../icons/banner/icons8-prise.svg');
+                right: 4px;
+                top: 8px;
+            }
+            &-old {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #C4C4C4;
+                margin-right: 12px;
+                background-image: url('../icons/banner/prise-line.svg');
+                background-repeat: no-repeat;
+                padding: 0px 5px;
+                display: inline-block;
+            }
+            &-old::after {
+                content:'';
+                position: absolute;
+                width: 8px;
+                height: 10px;
+                background-image: url('../icons/banner/icons8-old.svg');
+                right: 4px;
+                top: 43px;
+            }
+        }
+        &__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        &__info {
+            color: #fff;
+            padding: 8px 20px;
+            background-color: #1C62CD;
+            font-size: 12px;
+            text-transform: uppercase;
+            line-height: 15px;
+            letter-spacing: 0.1em;
+        }
+        &__title {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 7px;
+            font-family: 'Barlow', sans-serif;
+        }
+        &__img {
+            object-fit: contain;
+        }
+        &__footer {
+            background-color: #F0F0F4;
+            padding: 25px 20px;
+            font-size: 18px;
+            line-height: 21px;
+            span {
+                color: #1C62CD;
+                display: block;
+                font-weight: 700;
+                font-family: 'Barlow', sans-serif;
+            }
+        }
+    }
+
+    
+}

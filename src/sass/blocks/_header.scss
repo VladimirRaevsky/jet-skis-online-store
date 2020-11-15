@@ -1,0 +1,94 @@
+.header {
+    &__top-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 122px;
+        font-family: "SFProDisplay-Bold", sans-serif;
+        font-weight: 700;
+    }
+    .menu__item {
+        display: inline-block;
+    }
+    .menu__link + .menu__link {
+        padding-left: 50px;
+    }
+    &__box {
+        display: flex;
+    }
+    &__adress {
+        margin-right: 60px;
+        width: 265px;
+        padding-left: 30px;
+        position: relative;
+    }
+    &__adress::before {
+        content:'';
+        position: absolute;
+        background-image: url('../icons/header/location.svg');
+        width: 30px;
+        height: 30px;
+        left: 0;
+        top: -11px;
+    }
+    .user-list {
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+        &__item {
+            padding-right: 10px;
+        }
+    }
+    .bascet {
+        position: relative;
+        &__num {
+            position: absolute;
+            font-size: 10px;
+            line-height: 21px;
+            font-weight: 500;
+            color: #FFFFFF;
+            width: 20px;
+            height: 20px;
+            top: 5px;
+            left: 25px;
+            border-radius: 50%;
+            background: #1C62CD;
+            text-align: center;
+            font-family: "SFProDisplay-Medium", sans-serif;
+        }
+    }
+    &__bottom {
+        .menu-categories {
+            background-color: #F0F0F4;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            min-height: 53px;
+
+            &__item {
+                position: relative;
+            }
+            &__link::before {
+                content:'';
+                position: absolute;
+                width: 0;
+                left: auto;
+                right: 0;
+                border-bottom: 3px solid #1C62CD;
+                bottom: -14px;
+                transition: all .5s;
+            }
+            &__link:hover {
+                color: #000;
+            }
+            &__link:hover::before {
+                width: 100%;
+                left: 0;
+                right: auto;
+                transition: all .5s;
+            }
+        }
+    }
+    
+}
+
