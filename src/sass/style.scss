@@ -1,7 +1,9 @@
 html {
     box-sizing: border-box;
 }
-
+.page-section {
+    margin-bottom: 80px;
+}
 *, *::before, *::after {
     box-sizing: inherit;
 }
@@ -40,4 +42,6 @@ body {
 @import 'blocks/header';
 @import 'blocks/banner-section';
 @import 'blocks/slick';
+@import 'blocks/tabs';
+@import 'blocks/categories';
 
