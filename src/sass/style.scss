@@ -11,6 +11,8 @@ html {
 a {
     text-decoration: none;
     color: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 p {
@@ -22,7 +24,7 @@ ul, li {
     list-style: none;
 }
 
-h1 h2 h3 h4 h5 h6 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
@@ -44,4 +46,5 @@ body {
 @import 'blocks/slick';
 @import 'blocks/tabs';
 @import 'blocks/categories';
+@import 'blocks/product';
 

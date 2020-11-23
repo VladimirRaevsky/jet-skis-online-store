@@ -1,26 +1,19 @@
 .search {
     &__tabs {
         margin-bottom: 25px;
-
         &-item {
             padding: 11px 26px;
 
-            &--active {
-                font-weight: 700;
-                background-color: #F0F0F4;
-                padding: 11px 26px;
-                border-radius: 5px;
-            }
+        }
+        &-item.tab-item--active {
+            font-weight: 700;
+            background-color: #F0F0F4;
+            padding: 11px 26px;
+            border-radius: 5px;
         }
     }
     &__content {
         margin-top: 25px;
-        &-item {
-            display: none;
-        }
-        &-item--active {
-            display: block;
-        }
         &-form {
             display: flex;
         }
@@ -54,4 +47,19 @@
             margin-left: -3px;
         }
     }
+}
+.tabs-content {
+    display: none;
+}
+.tabs-content.tabs-content--active {
+    display: block;
+}
+.tabs-item--active {
+    display: block;
+}
+.products__content {
+    display: none;
+}
+.products__content.tabs-content--active {
+    display: block;
 }

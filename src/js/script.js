@@ -10,34 +10,76 @@ $(function(){
 
 document.addEventListener('DOMContentLoaded', ()=> {
 
-    const parentTabs = document.querySelector('.search__tabs');
-    const searchTabs = document.querySelectorAll('.search__tabs-item');
-    const searchForm = document.querySelectorAll('.search__content-item');
+    const parentTabs = document.querySelector('.tabs');
+    const parentProduct = document.querySelector('.products__tabs');
+    const tabItem = document.querySelectorAll('.tab');
+    const productContent = document.querySelectorAll('.products__content');
+    const tabContent = document.querySelectorAll('.tabs-content');
+    const productTabs = document.querySelectorAll('.tab-item');
+    const productItem = document.querySelectorAll('.product-item__favorite');
+
+
+    productItem.forEach(item => {
+        item.addEventListener('click', (event)=> {
+            const target = event.target;
+            if(target && target.classList.contains('product-item__favorite')) {
+                item.classList.toggle('product-item__favorite--active');
+            }
+        });
+    });
+    
 
     function hideTabs() {
-        searchForm.forEach(item => {
-            item.classList.remove('search__content-item--active');
+        tabContent.forEach(item => {
+            item.classList.remove('tabs-content--active');
         });
-        searchTabs.forEach(item => {
-            item.classList.remove('search__tabs-item--active');
+        tabItem.forEach(item => {
+            item.classList.remove('tab-item--active');
         });
     }
-
     function showTabs(i = 0) {
-        searchForm[i].classList.add('search__content-item--active');
-        searchTabs[i].classList.add('search__tabs-item--active');
+        tabContent[i].classList.add('tabs-content--active');
+        tabItem[i].classList.add('tab-item--active');
     }
 
+    function hideProductTabs() {
+        productTabs.forEach(item => {
+            item.classList.remove('tab-item--active');
+        });
+        productContent.forEach(item => {
+            item.classList.remove('tabs-content--active');
+        });
+    }
+    function showProductTabs(i = 0) {
+        productTabs[i].classList.add('tab-item--active');
+        productContent[i].classList.add('tabs-content--active');
+    }
+    hideProductTabs();
     hideTabs();
     showTabs();
-    
+    showProductTabs();
+
+
     parentTabs.addEventListener('click', (event)=> {
+        event.preventDefault();
         const target = event.target;
-        if(target && target.classList.contains('search__tabs-item')) {
-            searchTabs.forEach((item, i)=> {
+        if(target && target.classList.contains('tab')) {
+            tabItem.forEach((item, i)=> {
                 if(target == item) {
                     hideTabs();
                     showTabs(i);                
+                }
+            });
+        }
+    });
+
+    parentProduct.addEventListener('click', (event)=> {
+        const target = event.target;
+        if(target && target.classList.contains('tab-item')) {
+            productTabs.forEach((item, i)=> {
+                if(target == item) {
+                    hideProductTabs();
+                    showProductTabs(i);
                 }
             });
         }
