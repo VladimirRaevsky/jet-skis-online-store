@@ -1,0 +1,17 @@
+[33mcommit 849d303e59b30e89c2fcdb7eb81ee0ec05e16549[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: vladimir <rayevskiy.volodya@mail.ru>
+Date:   Mon Nov 23 22:06:22 2020 +0300
+
+    completed cards, finalized tabs
+
+[33mcommit e778726e2ff723f2e1dec59a89fa8c85f0d7dda1[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: vladimir <rayevskiy.volodya@mail.ru>
+Date:   Thu Nov 19 23:18:59 2020 +0300
+
+    made the top tabs
+
+[33mcommit aeb423e6b9d63199d432c774ec12afcf4b692c7a[m
+Author: vladimir <rayevskiy.volodya@mail.ru>
+Date:   Sun Nov 15 21:49:10 2020 +0300
+
+    made a header and a carousel

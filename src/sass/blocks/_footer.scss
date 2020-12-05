@@ -1,0 +1,87 @@
+.footer {
+    margin-top: 97px;
+    padding: 43px 0 27px;
+    background-color: #F0F0F4;
+    &__top {
+
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-title {
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: bold;
+        }
+        &-item {
+            width: 155px;
+
+            .social-list {
+                display: flex;
+                align-items: center;
+                height: 100%;
+
+                &__item + .social-list__item{
+                    margin-left: 30px;
+                }
+            }
+
+        }
+        &-social {
+            width: 250px;
+        }
+        &-newslatter {
+            width: 295px;
+        }
+        &-form {
+            margin-top: 34px;
+            display: flex;
+            button {
+                font-size: 11px;
+                line-height: 11px;             
+                text-align: center;
+                letter-spacing: 0.12em;
+                text-transform: uppercase;               
+                color: #FFFFFF;
+                padding: 9px 16px;
+                background-color: #1C62CD;
+                font-family: "SFProDisplay-Bold", sans-serif;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+        &-input {
+            width: 185px;
+            padding: 8px 12px;
+            background-color: #fff;
+            border: none;
+            outline: none;
+            
+        }
+        &-input::placeholder {
+            font-size: 14px;
+            line-height: 17px;
+            color: #C4C4C4;
+        }
+        
+    }
+    &-list {
+
+        &__item {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        margin-top: 46px;
+        &-link {
+            margin: 0 40px;
+            font-size: 10px;
+            line-height: 12px;       
+            color: #48494D;
+        }
+    }
+}

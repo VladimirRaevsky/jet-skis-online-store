@@ -1,0 +1,130 @@
+.catalog {
+
+    .product-item__wrapper {
+        position: relative;
+        max-width: 270px;             
+    }
+    .product-item {
+        border: 1px solid #CDCDCD;
+        border-radius: 3px;
+        text-align: center;
+        padding: 52px 20px 31px;
+        transition: all .5s;
+        position: relative;
+        width: 270px;
+        height: 400px;
+        &__img {
+            display: inline-block;
+        }
+
+        &__notify-text {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 21px;
+            padding-top: 7px;
+            color: #2F3035;
+            display: none;
+        }
+        &__notify-link {
+            position: absolute;
+            z-index: 10;
+            bottom: 25px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #1C62CD;
+            border-bottom: 1px solid #1C62CD;
+            left: 15%;
+            display: none;
+        }
+        &:hover {
+            color: #1C62CD;
+            background: #FFFFFF;
+            box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+            border-radius: 3px;
+        }
+        &:hover .product-item__hover-text {
+            opacity: 1;
+            transition: all .5s;
+        }
+        &__hover-text {
+            position: absolute;
+            padding: 18px 22px;
+            background-color: rgba($color: #fff, $alpha: .9);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 3px;
+            color: #2F3035;
+            top: 122px;
+            left: 11%;
+            opacity: 0;
+            transition: all .5s;
+        }
+        &--sale::before {
+            content:'SALE';
+            position: absolute;
+            top: 0;
+            left: -1px;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.07em;                    
+            color: #FFFFFF;
+            padding: 8px 16px;
+            background-color: #1C62CD;
+            text-transform: uppercase;
+        }
+        
+        &__title {
+            font-size: 18px;
+            line-height: 21px;
+            padding-top: 14px;
+            font-weight: normal;
+        }
+        &__price {
+            padding-top: 25px;
+            font-size: 30px;
+            line-height: 36px;
+            font-family: "SFProDisplay-Bold", sans-serif;
+            font-weight: 700;
+        }
+        &__bascet {
+            position: absolute;
+            background-color: #1C62CD;
+            border-radius: 10px 0px 0px 0px;
+            border: none;
+            outline: none;
+            padding: 10px 16px 7px 14px;
+            right: 0;
+            bottom: 0;
+            cursor: pointer;
+            z-index: 10;
+            
+        }
+        &__favorite {
+            position: absolute;
+            right: 0;
+            width: 24px;
+            height: 22px;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            top: 16px;
+            right: 19px;
+            cursor: pointer;
+        }
+        &__favorite::before {
+            content:'';
+            width: 24px;
+            height: 22px;
+            background-image: url('../icons/product/favorite.svg');
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 10;
+        }
+        &__favorite--active::before {
+            background-image: url('../icons/product/favorite-blue.svg');
+            z-index: 10;
+        }
+    }
+
+}

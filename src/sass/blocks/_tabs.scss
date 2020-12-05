@@ -5,7 +5,7 @@
             padding: 11px 26px;
 
         }
-        &-item.tab-item--active {
+        &-item.tab--active {
             font-weight: 700;
             background-color: #F0F0F4;
             padding: 11px 26px;
@@ -31,7 +31,7 @@
             color: #656464;
         }
         &-button {
-            font-family: "SFProDisplay-Bold" sans-serif;
+            font-family: "SFProDisplay-Bold", sans-serif;
             font-weight: 700;
             font-size: 14px;
             line-height: 17px;           
@@ -52,14 +52,5 @@
     display: none;
 }
 .tabs-content.tabs-content--active {
-    display: block;
-}
-.tabs-item--active {
-    display: block;
-}
-.products__content {
-    display: none;
-}
-.products__content.tabs-content--active {
     display: block;
 }
