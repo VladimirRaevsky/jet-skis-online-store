@@ -30,6 +30,19 @@ $(function(){
         prevArrow:'<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="icons/banner/arrow-black-left.svg" alt=""></button>',
         nextArrow:'<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="icons/banner/arrow-black-right.svg" alt=""></button>',
     });
+    
+    $('.filter-style').styler();
 
+    $('.filter__item-drop').on('click', function(){
+        $(this).toggleClass('filter__item-drop--active');
+        $(this).next().slideToggle();
+    });
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 100000,
+        max: 500000,
+        from: 180000,
+        to: 350000
+    });
 });
 

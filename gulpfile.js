@@ -50,6 +50,11 @@ gulp.task('scripts', () => {
       .pipe(gulp.dest('dist/js'));
 });
 
+// gulp.task('style', () => {
+//     return gulp.src('src/css/*.css')
+//       .pipe(gulp.dest('dist/css'));
+// });
+
 gulp.task('fonts', () => {
     return gulp.src('src/fonts/**/*')
       .pipe(gulp.dest('dist/fonts'));
