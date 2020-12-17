@@ -15,10 +15,7 @@ $(function(){
         $(this).addClass('tab--active');
         $($(this).attr('href')).addClass('tabs-content--active');
     });
-     // 
-    // const tabsContainer = $(this).closest('.tab');
-    //     tabsContainer.find('.tab-item--active').removeClass('tab-item--active');
-    //     tabsContainer.find('.tabs-content--active').removeClass('tabs-content--active');
+
 
     $('.product-item__favorite').on('click', function(){
         $(this).toggleClass('product-item__favorite--active');
@@ -56,5 +53,12 @@ $(function(){
         $('.catalog__filter-btngrid').removeClass('catalog__filter-button--active');
         $('.product-item__wrapper').addClass('product-item__wrapper--list');
     });
+
+    $(".rate-yo").rateYo({
+        normalFill: "#C4C4C4",
+        starWidth: "23px",
+        ratedFill: "#1C62CD",
+        spacing: "7px"
+      });
 });
 
