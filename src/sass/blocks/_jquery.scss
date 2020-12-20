@@ -1,0 +1,47 @@
+.jq-checkbox, .jq-radio {
+    border: 1px solid #C4C4C4;
+    box-shadow: none;
+    background: #FFFFFF;
+    width: 14px;
+    height: 14px;        
+    vertical-align: -3px;
+}
+.jq-checkbox.checked, .jq-radio.checked {
+    background: #1C62CD;
+    border: none;
+}
+.jq-checkbox.checked .jq-checkbox__div {
+    width: 8px;
+    height: 6px;
+    margin: 4px 0 0 3px;
+    border-bottom: none;
+    border-left: none;
+    transform: rotate(0);
+    background-image: url(../icons/Check.1.svg);
+}
+.jq-radio {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    margin: 0;
+    background: transparent;
+    box-shadow: none;
+}
+.jq-radio.checked .jq-radio__div {
+     width: 0; 
+     height: 0; 
+     margin: 0; 
+     border-radius: none; 
+     background: transparent; 
+     box-shadow: none; 
+}
+.jq-checkbox, .jq-radio {
+    vertical-align: -1px;
+    width: 14px;
+    height: 14px;
+    margin: 0 15px 0 54px;
+    border: 1px solid #c3c3c3;
+    background: transparent;
+    box-shadow: none; 
+    cursor: pointer;
+}

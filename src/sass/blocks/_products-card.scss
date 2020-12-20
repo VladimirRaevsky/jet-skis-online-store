@@ -1,5 +1,5 @@
 .products-card {
-
+    
     &__footer {
         display: flex;
         flex-direction: column;
@@ -25,7 +25,7 @@
     &__inner {
         display: flex;
         justify-content: space-between;
-
+        margin-bottom: 80px;
     }
     &__box-img {
         width: 500px;
@@ -154,3 +154,108 @@
 
 }
 
+.card__tab-content {
+    margin-left: 34px;
+}
+.card__tabs-wrapper {
+        background-color: #F0F0F4;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 22px 0 20px;
+        margin-bottom: 50px;
+}
+.card__tab {
+    color: #2F3035;
+    opacity: 0.6;
+    padding-bottom: 5px;
+}
+.card__tab.tab--active {   
+    color: #2F3035;
+    opacity: 1;
+    border-bottom: 2px solid #1C62CD;
+}
+.card__top-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.card__lable-search {
+    font-size: 17px;
+    line-height: 20px;
+    color: rgba(47, 48, 53, 0.7);
+    
+}
+.card__input-search {
+    margin-left: 17px;
+    margin-right: 100px;
+    padding: 9px 20px 9px 17px;
+    outline: none;
+    width: 313px;
+}
+
+.lable-pickup {
+    font-size: 17px;
+    line-height: 20px;
+    color: rgba(47, 48, 53, 0.7);
+}
+.card__list-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(47, 48, 53, 0.7);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.card__list-item:not(:first-child){
+    border-bottom: 1px solid rgba(47, 48, 53, 0.1);
+}
+.card__list-address {
+    width: 195px;
+    flex-wrap: wrap;
+}
+.card__list-workhours {
+    width: 155px;
+}
+.card__list-avialable {
+    width: 107px;
+}
+.card__list-num {
+    width: 106px;
+}
+.card__list-btnbutton {
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.12em;
+    color: #FFFFFF;
+    background: #1C62CD;
+    border-radius: 3px;
+    padding: 9px 40px;
+    border: none;
+    outline: none;
+}
+.card__list-btn{
+    width: 140px;
+    cursor: pointer;
+}
+.card__list-addresstitle,
+.card__list-workhourstitle,
+.card__list-avialabletitle,
+.card__list-numtitle {
+    font-size: 20px;
+    line-height: 24px;
+    color: #2F3035;
+    cursor: pointer;
+}
+.card__list-workhours {
+    display: flex;
+    justify-content: space-between;
+}
+.card__list-time {
+    width: 95px;
+}
+.card__tabs {
+    margin-bottom: 100px;
+}
