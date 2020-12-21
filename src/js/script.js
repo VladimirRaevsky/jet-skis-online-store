@@ -59,6 +59,10 @@ $(function(){
         starWidth: "23px",
         ratedFill: "#1C62CD",
         spacing: "7px"
-      });
+    });
+
+    $('.menu__btn').on('click', function() {
+        $('.menu-mobile__list').toggleClass('menu-mobile__list--active');
+    });
 });
 

@@ -1,0 +1,124 @@
+@media (max-width: 1100px) {
+    .header .menu__link+.menu__link {
+        padding-left: 20px;
+    }
+    .header__adress {
+        margin-right: 20px;
+    }
+}
+@media (max-width: 968px) {
+    .header__bottom {
+        display: none;
+    }
+    .menu__list {
+        display: none;
+    }
+    .menu__mobile-wrapper {
+        display: block;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #2F3035;
+        font-family: "SFProDisplay-Bold", sans-serif;
+        overflow-x: scroll;
+        margin: 0;
+    }
+    .menu__mobile-line {
+        padding: 14px 10px;
+        background: #F0F0F4;
+        overflow-x: scroll;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu__btn {
+        display: block;
+        background: transparent;
+        cursor: pointer;
+        border: none;
+        padding: 0;
+    }
+    .menu__btn-line {
+        background: #2F3035;
+        border-radius: 3px;
+        margin: 9px 0;
+        height: 4px;
+        width: 34px;
+    }
+    .menu-mobile__list {
+        display: block;
+    }
+
+    .menu-mobile__list {
+        width: 243px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+        transform: translateX(-100%);
+        transition: all .5s;
+        z-index: 10;
+        position: absolute;
+        background-color: #fff;
+    }
+    .menu-mobile__link {
+         display: flex;
+         padding-left: 53px;;
+         padding-top: 36px;  
+    }
+
+    .menu-mobile__list--active {
+        transform: translateX(0);
+    }
+    .menu-mobile__item {
+        position: relative;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .menu-mobile__item:nth-child(15) {
+        margin-bottom: 40px;
+    }
+    .menu-mobile__img {
+        position: absolute;
+        left: 11px;
+        bottom: 0;
+    }
+    
+}
+@media(max-width: 640px) {
+    .header__adress {
+        display: none;
+    }
+    .header__adress-mobile {
+        display: block;
+    }
+    .menu-mobile__item {
+        position: relative;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+       
+    }
+    .menu-mobile__img {
+        position: absolute;
+        left: 11px;
+        bottom: 0;
+    }
+    .menu-mobile__link {
+         display: flex;
+         padding-left: 53px;;
+         padding-top: 36px;
+         
+    }
+    .header__adress-mobile {
+        padding: 65px 18px 136px 44px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #2F3035;
+        font-family: "SFProDisplay-Bold", sans-serif;
+    }
+}
+@media(max-width: 450px){
+    .menu__mobile-line {
+        width: 460px;
+        display: inline-block;
+    }
+    .menu__item + .menu__item {
+        margin-left: 15px;
+    }
+}

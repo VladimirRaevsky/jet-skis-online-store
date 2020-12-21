@@ -6,6 +6,7 @@
         min-height: 122px;
         font-family: "SFProDisplay-Bold", sans-serif;
         font-weight: 700;
+        position: relative;
     }
     .menu__item {
         display: inline-block;
@@ -92,3 +93,18 @@
     
 }
 
+.menu__btn {
+    display: none;
+}
+.menu-mobile__list {
+    display: none;
+}
+.menu__mobaile-list {
+    display: none;
+}
+.menu__mobile-wrapper {
+    display: none;
+}
+.header__adress-mobile {
+    display: none;
+}
