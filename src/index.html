@@ -185,7 +185,7 @@
             </div>
         </header>
           
-         <!-- <section class="banner-section page-section">
+         <section class="banner-section page-section">
             <div class="container">
                 <div class="banner-section__inner">
                     <div class="banner-section__slider">
@@ -225,14 +225,16 @@
                     </a>
                 </div>
             </div>
-        </section> -->
-        <!-- <div class="search page-section">
+        </section>
+        <div class="search page-section">
             <div class="container">
                 <div class="search__inner">
-                    <div class="search__tabs tabs">
-                        <a class="tab search__tabs-item tab--active" href="#tab-1">Поиск по номеру</a>
-                        <a class="tab search__tabs-item" href="#tab-2">Поиск по марке</a>
-                        <a class="tab search__tabs-item" href="#tab-3">Поиск по названию товара</a>
+                    <div class="tabs-wrapper">
+                        <div class="search__tabs tabs mobile-overflow">
+                            <a class="tab search__tabs-item tab--active" href="#tab-1">Поиск по номеру</a>
+                            <a class="tab search__tabs-item" href="#tab-2">Поиск по марке</a>
+                            <a class="tab search__tabs-item" href="#tab-3">Поиск по названию товара</a>
+                        </div>
                     </div>
                     <div class="search__content">
                         <div class="search__content-item tabs-content tabs-content--active" id="tab-1">
@@ -256,8 +258,8 @@
                     </div>
                 </div>
             </div>
-        </div> -->
-        <!-- <section class="categories page-section">
+        </div>
+        <section class="categories page-section">
             <div class="container">
                 <div class="categories__inner">
                     <a class="categories__item">
@@ -316,15 +318,15 @@
                     </a>
                 </div>
             </div>
-        </section> -->
-        <!-- <section class="product">
+        </section>
+        <section class="product">
             <div class="container">
                 <div class="product__inner">
+                    <h4 class="product__title">
+                        Популярные товары
+                    </h4>
                     <div class="tabs-wrapper">
-                        <h4 class="product__title">
-                            Популярные товары
-                        </h4>
-                        <div class="tabs products__tabs">
+                        <div class="tabs products__tabs mobile-overflow">
                             <a class="tab products__tab tab--active" href="#tabs__content-1">запчасти</a>
                             <a class="tab products__tab" href="#tabs__content-2">моторы</a>
                             <a class="tab products__tab" href="#tabs__content-3">шины </a>
@@ -332,6 +334,7 @@
                             <a class="tab products__tab" href="#tabs__content-5">инструменты</a>
                             <a class="tab products__tab" href="#tabs__content-6">аксессуары </a>
                         </div>
+                    </div>
                         <div class="tabs-container products__container">
                             <div class="tabs-content products__content tabs-content--active" id='tabs__content-1'>
                                 <div class="product-slider">
@@ -1665,7 +1668,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -1674,23 +1676,23 @@
                     Показать еще
                 </a>
             </div>
-        </section> -->
-        <!-- <div class="banner">
+        </section>
+        <div class="banner">
             <div class="container">
                 <a class="banner__img" href="#">
                     <img src="icons/product/banner.jpg" alt="">
                 </a>
             </div>
-        </div> -->
+        </div>
 
-        <!-- <section class="popular">
+        <section class="popular">
             <div class="container">
                 <div class="product__inner">
+                    <h4 class="product__title">
+                        С этим товаром покупают
+                    </h4>
                     <div class="tabs-wrapper">
-                        <h4 class="product__title">
-                            С этим товаром покупают
-                        </h4>
-                        <div class="tabs products__tabs">
+                        <div class="tabs products__tabs mobile-overflow">
                             <a class="tab products__tab tab--active" href="#tabs-1">запчасти</a>
                             <a class="tab products__tab" href="#tabs-2">моторы</a>
                             <a class="tab products__tab" href="#tabs-3">шины </a>
@@ -1698,6 +1700,7 @@
                             <a class="tab products__tab" href="#tabs-5">инструменты</a>
                             <a class="tab products__tab" href="#tabs-6">аксессуары </a>
                         </div>
+                    </div>
                         <div class="tabs-container products__container">
                             <div class="tabs-content products__content tabs-content--active" id='tabs-1'>
                                 <div class="product-slider">
@@ -3033,14 +3036,18 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> -->
+                <div class="product__more mobile__product-more">
+                    <a class="product__more-link" href="#">
+                        Показать еще
+                    </a>
+                </div>
+        </section>
 
-        <!-- <section class="footer">
+        <section class="footer">
             <div class="container">
                 <div class="footer__top">
                     <div class="footer__top-inner">
@@ -3055,8 +3062,8 @@
                                 <button>Отправить</button>
                             </form>
                         </div>
-                        <div class="footer__top-item">
-                            <h6 class="footer__top-title">Информация</h6>
+                        <div class="footer__top-item footer__top-itemdrop">
+                            <h6 class="footer__top-title footer__topdrop">Информация</h6>
                             <ul class="footer-list">
                                 <li class="footer-list__item">
                                     <a href="#">О компании</a>
@@ -3072,8 +3079,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="footer__top-item">
-                            <h6 class="footer__top-title">Интернет-магазин</h6>
+                        <div class="footer__top-item ">
+                            <h6 class="footer__top-title footer__topdrop">Интернет-магазин</h6>
                             <ul class="footer-list">
                                 <li class="footer-list__item">
                                     <a href="#">Доставка и самовывоз</a>
@@ -3120,7 +3127,7 @@
                     <a class="footer__bottom-link" href="#">Политика обработки персональных данных</a>
                 </div>
             </div>
-        </section> -->
+        </section>
 
     </body>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

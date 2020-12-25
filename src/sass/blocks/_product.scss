@@ -168,7 +168,11 @@
             padding: 17px 43px;
         }
     }
+    
 }
+.mobile__product-more {
+        display: none;
+    }
 .product-item__wrapper.product-item__not-available .product-item__price {
     display: none;
 }        
@@ -199,4 +203,29 @@
     padding: 0;
     margin: 0;
     cursor: pointer;
+}
+.product .slick-dots {
+    position: absolute;
+    bottom: -30px;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+.product .slick-dots li {
+    display: inline-block;
+    padding: 0 5px;
+}
+.product .slick-dots button {
+    padding: 0;
+    font-size: 0;
+    margin: 0;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #C4C4C4;
+    border-radius: 50%;
+    background-color: transparent;
+    outline: none;
+}
+.product .slick-active button {
+    background-color: #1C62CD;
 }

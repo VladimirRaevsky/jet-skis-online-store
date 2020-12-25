@@ -1,0 +1,25 @@
+.popular .slick-dots {
+    position: absolute;
+    bottom: -30px;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+.popular .slick-dots li {
+    display: inline-block;
+    padding: 0 5px;
+}
+.popular .slick-dots button {
+    padding: 0;
+    font-size: 0;
+    margin: 0;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #C4C4C4;
+    border-radius: 50%;
+    background-color: transparent;
+    outline: none;
+}
+.popular .slick-active button {
+    background-color: #1C62CD;
+}
