@@ -90,6 +90,7 @@
                     <li class="breadcrumbs__list-item">
                         <a href="#">Гидроциклы</a>
                     </li>
+                    
                 </ul>
             </div>
         </div>
@@ -99,14 +100,15 @@
                 <h2 class="catalog__title">
                     Гидроциклы
                 </h2>
-                <div class="catalog__filter">
-                    <div class="catalog__filter-items">
-                        <button>Полноприводные</button>
-                        <button>от 5000</button>
-                        <button>BRP</button>
-                        <button>еще</button>
+                <div class="catalog__filter ">
+                    <div class="tabs-wrapper tabs-wrapper">
+                        <div class="catalog__filter-items mobile-overflow">
+                            <button>Полноприводные</button>
+                            <button>от 5000</button>
+                            <button>BRP</button>
+                            <button>еще</button>
+                        </div>
                     </div>
-                    <!-- catalog__filter-items -->
                     <div class="catalog__filter-btn">
                         <select class="filter-style select-item">
                             <option value="">По популярности</option>
@@ -134,12 +136,14 @@
                                 </svg>
                         </button>
                     </div>
-                    <!-- catalog__filter-btn -->
                 </div>
-                <!-- catalog__filter -->
+        
                 <div class="catalog__inner">
+                    <div class="filter-btn">
+                        фильтр
+                    </div>
                     <aside class="catalog__inner-aside aside-filter">
-                        <div class="tabs-wrapper">
+                        <div class="tabs-wrapper tabs-wrapper__no-scrolling">
                             <div class="tabs aside-filter__tabs">
                                 <a href="#aside-tab-1" class="tab aside-filter__tab tab--active"><span>параметры</span></a>
                                 <a href="#aside-tab-2" class="tab aside-filter__tab"><span>по марке</span></a>
@@ -366,7 +370,7 @@
                             </div>
                         </div>
                     </aside>
-                    <!-- catalog__inner-aside -->
+                    
                     <div class="catalog__inner-list">
                         <div class="product-item__wrapper">
                             <button class="product-item__bascet">

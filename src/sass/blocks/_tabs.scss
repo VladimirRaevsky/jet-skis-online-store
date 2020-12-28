@@ -3,7 +3,7 @@
         margin-bottom: 25px;
         &-item {
             padding: 11px 26px;
-
+            display: inline-block;
         }
         &-item.tab--active {
             font-weight: 700;

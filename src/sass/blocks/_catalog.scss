@@ -50,6 +50,7 @@
         width: 14px;
         height: 14px;        
         vertical-align: -3px;
+        margin: 0 10px 0 0;  
     }
     .jq-checkbox.checked, .jq-radio.checked {
         background: #1C62CD;
@@ -490,6 +491,7 @@
         position: relative;
         width: 270px;
         height: 400px;
+        display: inline-block;
         &__img {
             display: inline-block;
             width: 100%;
@@ -608,4 +610,10 @@
         }
     }
 
+}
+.tabs-wrapper.tabs-wrapper__no-scrolling {
+    overflow-x: hidden;
+}
+.filter-btn {
+    display: none;
 }

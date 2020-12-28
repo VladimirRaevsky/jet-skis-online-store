@@ -13,7 +13,6 @@ a {
     color: inherit;
     margin: 0;
     padding: 0;
-    display: inline-block;
 }
 
 p {
@@ -45,6 +44,7 @@ body {
     margin: 0 auto;
 }
 
+
 @import 'blocks/header';
 @import 'blocks/banner-section';
 @import 'blocks/slick';
@@ -63,7 +63,5 @@ body {
 @import 'blocks/jquery';
 @import 'blocks/media';
 @import 'blocks/popular';
-
-
 
 

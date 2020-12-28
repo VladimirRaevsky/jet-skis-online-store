@@ -1677,10 +1677,15 @@
                 </a>
             </div>
         </section>
+
         <div class="banner">
             <div class="container">
                 <a class="banner__img" href="#">
-                    <img src="icons/product/banner.jpg" alt="">
+                    <picture>
+                        <source media="(max-width: 640px)" srcset="icons/product/mobile-banner.jpg">
+                        <source media="(min-width: 641px)" srcset="icons/product/banner.jpg">
+                        <img src="icons/product/banner.jpg" alt="">
+                    </picture>
                 </a>
             </div>
         </div>
