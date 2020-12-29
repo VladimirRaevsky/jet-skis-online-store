@@ -15,6 +15,11 @@
                 <div class="container">
                     <div class="header__top-inner">
                         <nav class="menu">
+                            <button class="menu__btn">
+                                <div class="menu__btn-line"></div>
+                                <div class="menu__btn-line"></div>
+                                <div class="menu__btn-line"></div>
+                            </button>
                             <ul class="menu__list">
                                 <li class="menu__item">
                                     <a class="menu__link" href="#">Магазины</a>
@@ -49,6 +54,104 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <ul class="menu-mobile__list">
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <img class="menu-mobile__img" src="icons/header/user.svg" alt="">
+                        <p>Войти</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <img class="menu-mobile__img" src="icons/header/user.svg" alt="">
+                        <p>Регистрация</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <img class="menu-mobile__img" src="icons/product/favorite.svg" alt="">
+                        <p>Избранное</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <img class="menu-mobile__img" src="icons/product/basket-bleck.svg" alt="">
+                        <p>Корзина</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <img class="menu-mobile__img" src="icons/product/house.svg" alt="">
+                        <p>Магазины</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <img class="menu-mobile__img" src="icons/product/procent.svg" alt="">
+                        <p>Акции</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <img class="menu-mobile__img" src="icons/product/box.svg" alt="">
+                        <p>Доставка и оплата</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <p>Квадроциклы</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <p>Катера</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <p>Гидроциклы</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <p>Лодки</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <p>Вездеходы</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <p>Снегоходы</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <p>Двигатели</p>
+                    </a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a class="menu-mobile__link" href="#">
+                        <p>Запчасти</p>
+                    </a>
+                </li>
+                <p class="header__adress-mobile">Москва,<br/> ул. Науки 25</p>
+            </ul>
+            <div class="menu__mobile-wrapper">
+                <ul class="menu__mobile-line">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Магазины</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Акции</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Доставка и оплата</a>
+                    </li>
+                </ul>
             </div>
             <div class="header__bottom">
                 <div class="container">
@@ -93,10 +196,11 @@
                     <li class="breadcrumbs__list-item">
                         <a href="#">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</a>
                     </li>
+
                 </ul>
             </div>
         </div>
-
+        
         <section class="products-card">
             <div class="container">
                 <div class="products-card__inner">
@@ -106,8 +210,8 @@
                         <p class="products-card__price-new">1 100 475 ₽</p>
                         <a href="#" class="products-card__link">Нашли дешевле? Снизим цену!</a>
                         <a href="#" class="products-card__sale"></a>
+                        <button class="products-card__content-btn products-card__content-btn-mobile">купить</button>
                     </div>
-                    <!-- products-card__box-img -->
                     <div class="products-card__description">
                         <h1 class="products-card__title">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</h1>
                         <div class="products-card__code">Код товара:366666-2 </div>
@@ -122,8 +226,7 @@
                                 <div class="rate-yo" data-rateyo-rating="4.5"></div>
                             </div>
                         </div>
-                        <!-- products-card__buttons -->
-                        <div class="tabs-wrapper">
+                        <div class="tabs-wrapper products-card__tabs">
                             <div class="tabs products-card__tabs">
                                 <a href="#products-card-1" class="tab products-card__tab tab--active">Характеристики</a>
                                 <a href="#products-card-2" class="tab products-card__tab">Наличие в магазине</a>
@@ -152,31 +255,26 @@
                                             <div class="product-card__item-right">2018</div>
                                         </li>
                                     </ul>
-                                    <!-- product-card__list -->
                                     <div class="products-card__footer">
                                         <a href="#" class="products-card__content-link">Показать еще</a>
                                         <button class="products-card__content-btn">купить</button>
                                     </div>
 
                                 </div>
-                                <!-- tabs-content -->
                                 <div id="products-card-2" class="tabs-content products-card__content">
                                     <div>content</div>
                                 </div>
                             </div>
-                            <!-- tabs-container -->
                         </div>
                     </div>
-                    <!-- products-card__description -->
                 </div>
-                <!-- products-card__inner -->
             </div>
         </section>
 
-        <section class="card__tabs">
+ <section class="card__tabs">
             <div class="container">
                 <div class="tabs-wrapper">
-                    <div class="tabs card__tabs-wrapper">
+                    <div class="tabs card__tabs-wrapper mobile-overflow">
                         <a href="#card__tab-1" class="tab card__tab">О товаре</a>
                         <a href="#card__tab-2" class="tab card__tab">Характеристики</a>
                         <a href="#card__tab-3" class="tab card__tab">Отзывы</a>
@@ -185,6 +283,7 @@
                         <a href="#card__tab-6" class="tab card__tab">Cервис</a>
                         <a href="#card__tab-7" class="tab card__tab">Гарантия</a>
                     </div>
+                </div>
                     <div class="tabs-container"> 
                         <div id="card__tab-1" class="tabs-content card__tab-content">content-1</div>
                         <div id="card__tab-2" class="tabs-content card__tab-content">content-2</div>
@@ -287,18 +386,17 @@
                         <div id="card__tab-6" class="tabs-content card__tab-content">content-6</div>
                         <div id="card__tab-7" class="tabs-content card__tab-content">content-7</div>
                     </div>
-                </div>
             </div>
-        </section>
+        </section> 
 
         <section class="product">
             <div class="container">
                 <div class="product__inner">
+                    <h4 class="product__title">
+                        Популярные товары
+                    </h4>
                     <div class="tabs-wrapper">
-                        <h4 class="product__title">
-                            Популярные товары
-                        </h4>
-                        <div class="tabs products__tabs">
+                        <div class="tabs products__tabs mobile-overflow">
                             <a class="tab products__tab tab--active" href="#tabs__content-1">запчасти</a>
                             <a class="tab products__tab" href="#tabs__content-2">моторы</a>
                             <a class="tab products__tab" href="#tabs__content-3">шины </a>
@@ -306,7 +404,7 @@
                             <a class="tab products__tab" href="#tabs__content-5">инструменты</a>
                             <a class="tab products__tab" href="#tabs__content-6">аксессуары </a>
                         </div>
-                        <!-- tabs -->
+                    </div>
                         <div class="tabs-container products__container">
                             <div class="tabs-content products__content tabs-content--active" id='tabs__content-1'>
                                 <div class="product-slider">
@@ -329,11 +427,9 @@
                                                 <div class="product-item__price">
                                                     9 800 ₽
                                                 </div>
-                                            <!-- /.product-item -->
                                             </a> 
                                         </div>
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -361,9 +457,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -391,9 +485,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
-                                    </div>
-                                    <!-- /.product-slider__item -->                                    
+                                    </div>                                
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper">
                                             <button class="product-item__bascet">
@@ -421,9 +513,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
-                                    </div>
-                                    <!-- /.product-slider__item -->                                    
+                                    </div>                                 
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -451,9 +541,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -481,9 +569,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper">
                                             <button class="product-item__bascet">
@@ -511,9 +597,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -541,13 +625,9 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                 </div>
-                                <!-- /.product-slider -->
                             </div>
-                            <!-- /.tabs__content -->
                             <div class="tabs-content products__content" id='tabs__content-2'>
                                 <div class="product-slider">
                                     <div class="product-slider__item">
@@ -569,11 +649,9 @@
                                                 <div class="product-item__price">
                                                     9 800 ₽
                                                 </div>
-                                            <!-- /.product-item -->
                                             </a> 
                                         </div>
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -601,9 +679,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -631,9 +707,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
-                                    </div>
-                                    <!-- /.product-slider__item -->                                    
+                                    </div>                               
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper">
                                             <button class="product-item__bascet">
@@ -661,9 +735,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
-                                    </div>
-                                    <!-- /.product-slider__item -->                                    
+                                    </div>                                  
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -691,9 +763,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -721,9 +791,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper">
                                             <button class="product-item__bascet">
@@ -751,9 +819,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -781,13 +847,9 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                 </div>
-                                <!-- /.product-slider -->
                             </div>
-                            <!-- /.tabs__content -->
                             <div class="tabs-content products__content" id='tabs__content-3'>
                                 <div class="product-slider">
                                     <div class="product-slider__item">
@@ -809,11 +871,9 @@
                                                 <div class="product-item__price">
                                                     9 800 ₽
                                                 </div>
-                                            <!-- /.product-item -->
                                             </a> 
                                         </div>
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -841,9 +901,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -871,9 +929,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->                                    
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper">
                                             <button class="product-item__bascet">
@@ -901,9 +957,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
-                                    </div>
-                                    <!-- /.product-slider__item -->                                    
+                                    </div>                                  
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -931,9 +985,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -961,9 +1013,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper">
                                             <button class="product-item__bascet">
@@ -991,9 +1041,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -1021,13 +1069,9 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                 </div>
-                                <!-- /.product-slider -->
                             </div>
-                            <!-- /.tabs__content -->
                             <div class="tabs-content products__content" id='tabs__content-4'>
                                 <div class="product-slider">
                                     <div class="product-slider__item">
@@ -1049,11 +1093,9 @@
                                                 <div class="product-item__price">
                                                     9 800 ₽
                                                 </div>
-                                            <!-- /.product-item -->
                                             </a> 
                                         </div>
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -1081,9 +1123,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -1111,9 +1151,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
-                                    </div>
-                                    <!-- /.product-slider__item -->                                    
+                                    </div>                                
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper">
                                             <button class="product-item__bascet">
@@ -1141,9 +1179,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
-                                    </div>
-                                    <!-- /.product-slider__item -->                                    
+                                    </div>                                  
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -1171,9 +1207,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -1201,9 +1235,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper">
                                             <button class="product-item__bascet">
@@ -1231,9 +1263,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -1261,13 +1291,9 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                 </div>
-                                <!-- /.product-slider -->
                             </div>
-                            <!-- /.tabs__content -->
                             <div class="tabs-content products__content" id='tabs__content-5'>
                                 <div class="product-slider">
                                     <div class="product-slider__item">
@@ -1289,11 +1315,9 @@
                                                 <div class="product-item__price">
                                                     9 800 ₽
                                                 </div>
-                                            <!-- /.product-item -->
                                             </a> 
                                         </div>
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -1321,9 +1345,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -1351,9 +1373,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
-                                    </div>
-                                    <!-- /.product-slider__item -->                                    
+                                    </div>                                
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper">
                                             <button class="product-item__bascet">
@@ -1381,9 +1401,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
-                                    </div>
-                                    <!-- /.product-slider__item -->                                    
+                                    </div>                                  
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -1411,9 +1429,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -1441,9 +1457,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper">
                                             <button class="product-item__bascet">
@@ -1471,9 +1485,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -1501,13 +1513,9 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                 </div>
-                                <!-- /.product-slider -->
                             </div>
-                            <!-- /.tabs__content -->
                             <div class="tabs-content products__content" id='tabs__content-6'>
                                 <div class="product-slider">
                                     <div class="product-slider__item">
@@ -1529,11 +1537,9 @@
                                                 <div class="product-item__price">
                                                     9 800 ₽
                                                 </div>
-                                            <!-- /.product-item -->
                                             </a> 
                                         </div>
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -1561,9 +1567,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -1591,9 +1595,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
-                                    </div>
-                                    <!-- /.product-slider__item -->                                    
+                                    </div>                               
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper">
                                             <button class="product-item__bascet">
@@ -1621,9 +1623,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
-                                    </div>
-                                    <!-- /.product-slider__item -->                                    
+                                    </div>                                 
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -1651,9 +1651,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -1681,9 +1679,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper">
                                             <button class="product-item__bascet">
@@ -1711,9 +1707,7 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                     <div class="product-slider__item">
                                         <div class="product-item__wrapper product-item__not-available">
                                             <button class="product-item__bascet">
@@ -1741,18 +1735,16 @@
                                                 </p>
                                             </a> 
                                         </div>
-                                        <!-- /.product-item__wrapper -->
                                     </div>
-                                    <!-- /.product-slider__item -->
                                 </div>
-                                <!-- /.product-slider -->
                             </div>
-                            <!-- /.tabs__content -->
-                        </div>
-                        <!-- /.tabs__container -->
                     </div>
-                    <!-- /.tabs__wrapper -->
                 </div>
+            </div>
+            <div class="product__more">
+                <a class="product__more-link" href="#">
+                    Показать еще
+                </a>
             </div>
         </section>
         <section class="footer">
